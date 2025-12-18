@@ -1,0 +1,13 @@
+# Materials Project Band Structure Downloader Requirements
+# Install with: pip install -r requirements.txt
+
+mp-api>=0.40.0
+pymatgen>=2024.1.1
+matplotlib>=3.7.0
+numpy>=1.24.0
+Pillow>=10.0.0
+tqdm>=4.65.0
+pandas
+numpy
+matplotlib
+scikit-learn

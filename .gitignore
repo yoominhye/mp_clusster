@@ -1,3 +1,6 @@
+api*
+band_structure_images_sc/  
+*.zip
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
