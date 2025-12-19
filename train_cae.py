@@ -5,6 +5,8 @@ from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms
 import pandas as pd
 import numpy as np
+from PIL import Image
+import os
 
 # 1. 아키텍처 정의 (논문 3.6절 기반)
 class BasicCAE(nn.Module):
@@ -60,7 +62,7 @@ def train_model():
     criterion = nn.BCELoss()
     optimizer = optim.Adam(model.parameters(), lr=1e-3)
     
-    dataset = BandStructureDataset(csv_file='test.csv')
+    dataset = BandStructureDataset(csv_file='mp_20_filtered/test.csv')
     loader = DataLoader(dataset, batch_size=32, shuffle=True)
 
     epochs = 50
